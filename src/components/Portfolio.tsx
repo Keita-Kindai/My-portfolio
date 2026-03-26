@@ -43,7 +43,7 @@ export default function Portfolio() {
       title: '学内競技プログラミングコンテスト開催',
       description: '友人と二人でPolygonで問題作成をし、DockerとDOMJudgeを用いて学内コンテストを開催しました!',
       image: contestImg,
-      link: 'https://www.businessinsider.jp/article/2512-kinki-university-open-ai/'
+      link: 'https://github.com/hamikan/Kindai_contest'
     },
     {
       id: 6,

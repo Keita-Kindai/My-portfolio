@@ -16,13 +16,13 @@ export default function About() {
             <img
               src={aboutImg}
               alt="About me"
-              className="max-w-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className=" w-2xl sm:max-w-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             />
           </div>
 
           {/* Content */}
           <div>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 w-2x">
               近畿大学情報学部3年生の竹内慶大（けいた）といいます。ウェブアプリケーション開発からネットワーク、機械学習などいろいろなことを触れながら勉強を進めています。
               ウェブアプリケーション開発ではフロントでは主にReact、TailwindCSSを用いて開発し、バックエンド（データベース含む）ではPostgreSQLやPythonのFastAPIなどを
               活用した経験があります。機械学習ではPyTorchやYOLOを通して通行量の取得、画像識別器、強化学習のエージェントなどを作成した経験があります。

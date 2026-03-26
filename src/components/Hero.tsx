@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 pb-20 px-4">
       <div className="max-w-6xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Content */}
           <div>
             <div className="flex gap-4 mb-6">
@@ -33,13 +33,13 @@ export default function Hero() {
               </a>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
               Hi, I'm Keita
             </h1>
-            <h3 className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
+            <h3 className="text-xl md:text-2xl lg:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
               Student
             </h3>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed mb-8">
               TOEIC: 890 (L: 475, R: 415) <br />
               IELTS: 7.0 (L: 7.5, R: 8.0, S: 6.5, W: 6.0) <br />
               AtCoder Algorithm: 973 <br />
@@ -50,7 +50,7 @@ export default function Hero() {
 
           {/* Image with Blob */}
           <div className="flex justify-center">
-            <div className="relative w-80 h-80">
+            <div className="relative w-64 md:w-80 h-64 md:h-80">
               {/* Profile Image */}
               <img
                 src={selfieImg}

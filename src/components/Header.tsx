@@ -23,12 +23,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-gray-900 shadow-lg transition-all duration-300">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="text-2xl font-bold text-blue-400">
+        <a href="#home" className="text-xl md:text-2xl font-bold text-blue-400">
           Keita
         </a>
 
         {/* Desktop Menu - Right Side */}
-        <ul className="hidden md:flex gap-8 items-center">
+        <ul className="hidden md:flex gap-6 lg:gap-8 items-center">
           {navItems.map((item) => (
             <li key={item.id}>
               <button
