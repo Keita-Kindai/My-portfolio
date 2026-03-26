@@ -52,7 +52,7 @@ export default function Footer() {
                 <FaXTwitter />
               </a>
               <a
-                href="https://twitter.com/ritemosu1"
+                href="https://github.com/Keita-Kindai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

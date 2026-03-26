@@ -1,3 +1,5 @@
+import aboutImg from '../../public/img/selfie_2.jpeg';
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-gray-800 transition-colors">
@@ -12,7 +14,7 @@ export default function About() {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/img/selfie_2.jpeg"
+              src={aboutImg}
               alt="About me"
               className="max-w-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             />

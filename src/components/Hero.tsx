@@ -1,5 +1,6 @@
 import { FiChevronDown, FiGithub } from 'react-icons/fi';
 import { FaXTwitter } from "react-icons/fa6";
+import selfieImg from '../../public/img/selfie_1.jpg';
 
 export default function Hero() {
   const handleScroll = (id: string) => {
@@ -23,7 +24,7 @@ export default function Hero() {
                 <FaXTwitter />
               </a>
               <a
-                href="https://twitter.com/ritemosu1"
+                href="https://github.com/Keita-Kindai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -52,7 +53,7 @@ export default function Hero() {
             <div className="relative w-80 h-80">
               {/* Profile Image */}
               <img
-                src="/img/selfie_1.jpg"
+                src={selfieImg}
                 alt="Keita"
                 className="absolute inset-0 w-full h-full object-cover rounded-full"
               />

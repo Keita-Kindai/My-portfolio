@@ -41,6 +41,7 @@ export default function Skills() {
         { name: 'PostgreSQL', level: 'Intermediate', description: 'こちらは2年生終わりの時に学び始め、基礎的な操作は一通りできます' },
         { name: 'Flask', level: 'Beginner', description: 'ほとんど開発経験がありませんが、基礎的な使い方は理解しています' },
         { name: 'FastAPI', level: 'Intermediate', description: '開発経験があります' },
+        { name: 'C++', level: 'Beginner', description: '競技プログラミグで使用している言語です' },
       ],
     },
     {
