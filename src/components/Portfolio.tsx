@@ -95,7 +95,7 @@ export default function Portfolio() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300 opacity-55"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300 opacity-55 md:opacity-100"
               />
 
               {/* Overlay */}
