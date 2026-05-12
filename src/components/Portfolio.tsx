@@ -7,6 +7,7 @@ import atcoderImg from '../../public/img/atcoder.png';
 import giikuImg from '../../public/img/giiku.png';
 import icpcResultImg from '../../public/img/ICPC_result.png';
 import bookRecommenderImg from '../../public/img/book-recommender.png';
+import carCounter from '../../public/img/car_counter.png';
 
 export default function Portfolio() {
   const projects = [
@@ -73,6 +74,17 @@ export default function Portfolio() {
       image: bookRecommenderImg,
       link: 'https://github.com/Keita-Kindai/book-recommender'
     },
+    {
+      id: 10,
+      title: 'YOLOを使って交通量の測定',
+      description: (
+        <>
+          YOLOを使った交通量測定アプリです。イメージ動画は <a href="https://www.youtube.com/watch?v=dyNgq1FMLmM" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline">こちら</a>
+        </>
+      ),
+      image: carCounter,
+      link: 'https://github.com/Keita-Kindai/Car-counter'
+    }
   ];
 
   return (
