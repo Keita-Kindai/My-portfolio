@@ -7,7 +7,10 @@ import atcoderImg from '../../public/img/atcoder.png';
 import giikuImg from '../../public/img/giiku.png';
 import icpcResultImg from '../../public/img/ICPC_result.png';
 import bookRecommenderImg from '../../public/img/book-recommender.png';
+import icpc_2026 from '../../public/img/ICPC_result_2026.png'
 import carCounter from '../../public/img/car_counter.png';
+import study_record from '../../public/img/study_record.png';
+import zenn_profile from '../../public/img/Zenn_profile.png';
 
 export default function Portfolio() {
   const projects = [
@@ -42,9 +45,9 @@ export default function Portfolio() {
     {
       id: 5,
       title: '学内競技プログラミングコンテスト開催',
-      description: '友人と二人でPolygonで問題作成をし、DockerとDOMJudgeを用いて学内コンテストを開催しました!',
+      description: '友人と二人でPolygonで問題作成をし、DockerとDOMJudgeを用いて学内コンテストを開催しました! 詳細はNotionに',
       image: contestImg,
-      link: 'https://github.com/hamikan/Kindai_contest'
+      link: 'https://app.notion.com/p/33bcac9a2ecf8034b0f1f68857fbc261?source=copy_link'
     },
     {
       id: 6,
@@ -55,27 +58,41 @@ export default function Portfolio() {
     },
     {
       id: 7,
+      title: '学習記録について',
+      description: '普段のプログラミングの学習についてNotionにまとめました',
+      image: study_record,
+      link: 'https://app.notion.com/p/3a5cac9a2ecf80f49e86f24632307873?source=copy_link'
+    },
+    {
+      id: 8,
       title: '技育キャンプハッカソン参加',
       description: '去年の11月ごろに初めてハッカソンに参加しました。そこでは魅力的なToDoアプリを作成しました',
       image: giikuImg,
       link: 'https://github.com/hamikan/giiku-camp-team18#'
     },
     {
-      id: 8,
+      id: 9,
       title: 'ICPC2025年参加',
       description: '去年の7月ごろに競技プログラミングのイベントの一つであるICPCにTeam Mikanで参加しました（結果は惨敗でしたが...）',
       image: icpcResultImg,
       link: 'https://icpc.jp/2025/domestic/results/'
     },
     {
-      id: 9,
+      id: 10,
+      title: 'ICPC2026年参加',
+      description: '2026年の7月にICPCにTeam Greendyとして再び参加しました。詳細についてNotionの方にまとめました。',
+      image: icpc_2026,
+      link: 'https://app.notion.com/p/ICPC2026-393cac9a2ecf806c820ccbfab5466966?source=copy_link'
+    },
+    {
+      id: 11,
       title: '自然言語処理で書籍おすすめ',
       description: 'OpenAIのAPIを利用して埋め込みをし、文章を入力したら関連のあるものがお勧めされます。',
       image: bookRecommenderImg,
       link: 'https://github.com/Keita-Kindai/book-recommender'
     },
     {
-      id: 10,
+      id: 12,
       title: 'YOLOを使って交通量の測定',
       description: (
         <>
@@ -84,6 +101,17 @@ export default function Portfolio() {
       ),
       image: carCounter,
       link: 'https://github.com/Keita-Kindai/Car-counter'
+    },
+    {
+      id: 13,
+      title: 'Zennでのアウトプット',
+      description: (
+        <>
+          現在記事は1本のみですが、夏休みに更新していく予定です。
+        </>
+      ),
+      image: zenn_profile,
+      link: 'https://zenn.dev/litms'
     }
   ];
 
