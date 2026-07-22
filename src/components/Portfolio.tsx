@@ -13,6 +13,7 @@ import study_record from '../../public/img/study_record.png';
 import zenn_profile from '../../public/img/Zenn_profile.png';
 import kaggle_profile from '../../public/img/Kaggle_profile.png'
 import qiita_profile from '../../public/img/Qiita_profile.png'
+import { socialLinks } from '../data/socialLinks';
 
 export default function Portfolio() {
   const projects = [
@@ -113,7 +114,7 @@ export default function Portfolio() {
         </>
       ),
       image: zenn_profile,
-      link: 'https://zenn.dev/litms'
+      link: socialLinks.zenn
     },
     {
       id: 14,
@@ -124,7 +125,7 @@ export default function Portfolio() {
         </>
       ),
       image: kaggle_profile,
-      link: 'https://www.kaggle.com/litmsjp'
+      link: socialLinks.kaggle
     },
     {
       id: 15,
@@ -135,7 +136,7 @@ export default function Portfolio() {
         </>
       ),
       image: qiita_profile,
-      link: 'https://qiita.com/Litms'
+      link: socialLinks.qiita
     }
   ];
 

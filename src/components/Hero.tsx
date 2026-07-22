@@ -1,6 +1,14 @@
 import { FiChevronDown, FiGithub } from 'react-icons/fi';
-import { FaXTwitter } from "react-icons/fa6";
+import { SiKaggle, SiQiita, SiZenn } from 'react-icons/si';
 import selfieImg from '../../public/img/selfie_1.jpg';
+import { socialLinks } from '../data/socialLinks';
+
+const socialProfiles = [
+  { label: 'GitHub', href: 'https://github.com/Keita-Kindai', icon: FiGithub },
+  { label: 'Qiita', href: socialLinks.qiita, icon: SiQiita },
+  { label: 'Zenn', href: socialLinks.zenn, icon: SiZenn },
+  { label: 'Kaggle', href: socialLinks.kaggle, icon: SiKaggle },
+];
 
 export default function Hero() {
   const handleScroll = (id: string) => {
@@ -15,14 +23,19 @@ export default function Hero() {
           {/* Content */}
           <div>
             <div className="flex gap-4 mb-6">
-              <a
-                href="https://github.com/Keita-Kindai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                <FiGithub />
-              </a>
+              {socialProfiles.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${label}のプロフィールを開く`}
+                  title={label}
+                  className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  <Icon aria-hidden="true" />
+                </a>
+              ))}
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">

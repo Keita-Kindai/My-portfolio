@@ -1,5 +1,13 @@
 import { FiGithub } from 'react-icons/fi';
-import { FaXTwitter } from "react-icons/fa6";
+import { SiKaggle, SiQiita, SiZenn } from 'react-icons/si';
+import { socialLinks } from '../data/socialLinks';
+
+const socialProfiles = [
+  { label: 'GitHub', href: 'https://github.com/Keita-Kindai', icon: FiGithub },
+  { label: 'Qiita', href: socialLinks.qiita, icon: SiQiita },
+  { label: 'Zenn', href: socialLinks.zenn, icon: SiZenn },
+  { label: 'Kaggle', href: socialLinks.kaggle, icon: SiKaggle },
+];
 
 export default function Footer() {
   return (
@@ -43,14 +51,19 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Follow Me</h4>
             <div className="flex gap-4">
-              <a
-                href="https://github.com/Keita-Kindai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                <FiGithub />
-              </a>
+              {socialProfiles.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${label}のプロフィールを開く`}
+                  title={label}
+                  className="text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  <Icon aria-hidden="true" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
