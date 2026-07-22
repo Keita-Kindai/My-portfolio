@@ -11,6 +11,8 @@ import icpc_2026 from '../../public/img/ICPC_result_2026.png'
 import carCounter from '../../public/img/car_counter.png';
 import study_record from '../../public/img/study_record.png';
 import zenn_profile from '../../public/img/Zenn_profile.png';
+import kaggle_profile from '../../public/img/Kaggle_profile.png'
+import qiita_profile from '../../public/img/Qiita_profile.png'
 
 export default function Portfolio() {
   const projects = [
@@ -107,11 +109,33 @@ export default function Portfolio() {
       title: 'Zennでのアウトプット',
       description: (
         <>
-          現在記事は1本のみですが、夏休みに更新していく予定です。
+          主に機械学習のアウトプット目的です。現在記事は1本のみですが、夏休みに更新していく予定です。
         </>
       ),
       image: zenn_profile,
       link: 'https://zenn.dev/litms'
+    },
+    {
+      id: 14,
+      title: 'Kaggleでのアウトプット',
+      description: (
+        <>
+          こちらも夏休みに本格的に取り組んでいく予定です。
+        </>
+      ),
+      image: kaggle_profile,
+      link: 'https://www.kaggle.com/litmsjp'
+    },
+    {
+      id: 15,
+      title: 'Qiitaでのアウトプット',
+      description: (
+        <>
+          主に競技プログラミングに関するアウトプットをしていこうと考えています。
+        </>
+      ),
+      image: qiita_profile,
+      link: 'https://qiita.com/Litms'
     }
   ];
 
